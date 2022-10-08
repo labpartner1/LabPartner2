@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Noto+Sans&family=Nunito+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffefe;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    border: 0.2rem solid #fffefe;
+    background-color: #46da4e;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
