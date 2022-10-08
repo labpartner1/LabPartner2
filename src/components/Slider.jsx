@@ -8,7 +8,7 @@ import { Pagination, Navigation } from "swiper";
 import { Heading2, Container, Button, Heading4, Para, darkgreen, white } from './CommonComp'
 import styled from "styled-components";
 import { mobile } from "./Responsive";
-// import labPartnerApp from '../lab partner app/lab partner 2.0.exe';
+import labPartnerApp from '../lab partner app/lab partner 2.0.exe';
 import step1 from '../images/step 1.png'
 import step2 from '../images/step 2.png'
 import step3 from '../images/step 3.png'
@@ -92,8 +92,8 @@ export default function App() {
 
           </Swiper>
 
-          {/* <DownloadButton><a href={labPartnerApp}>Download</a></DownloadButton> */}
-          <DownloadButton>Download</DownloadButton>
+          <DownloadButton><a href={labPartnerApp}>Download</a></DownloadButton>
+          {/* <DownloadButton>Download</DownloadButton> */}
         </SliderContainer>
       </Wrapper>
     </>
