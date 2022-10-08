@@ -57,11 +57,9 @@ const Intro = () => {
                         <Name>Lab</Name>
                         <Name>Partner</Name>
                     <IntroPara>
-                        We'll help you to complete your labs.
+                        We'll help you to complete your labs
                     </IntroPara>
-
                 </NameContainer>
-
 
             </Container>
         </>
