@@ -98,7 +98,8 @@ const LabQues = () => {
         }
 
         getData();
-    }, [dataCollectionRef]);
+        // eslint-disable-next-line
+    }, []);
 
 
     return (
