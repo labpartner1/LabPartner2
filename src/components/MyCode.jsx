@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/vsDark";
+import { blue } from "./CommonComp";
 
 export const Wrapper = styled.div`
   font-family: sans-serif;
@@ -18,6 +19,17 @@ export const Pre = styled.pre`
   & .token-line {
     line-height: 1.3em;
     height: 1.3em;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+  &::-webkit-scrollbar-thumb {
+      border-radius: 0.5rem;
+      border: 0.2rem solid #1e1e1e;
+      background-color: ${blue};
   }
 `;
 

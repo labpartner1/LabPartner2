@@ -75,7 +75,6 @@ const LabQues = () => {
     const dataCollectionRef = collection(db, labname);
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
-
     const [search, setSearch] = useState("");
 
 
@@ -96,7 +95,7 @@ const LabQues = () => {
             setLoading(false);
 
         }
-
+        
         getData();
         // eslint-disable-next-line
     }, []);
@@ -126,4 +125,3 @@ const LabQues = () => {
 }
 
 export default LabQues
-
