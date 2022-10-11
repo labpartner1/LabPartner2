@@ -19,6 +19,10 @@ const IntroPara = styled(Para)`
     font-size: 2.5rem;
     color: #0051ff;
     ${mobile({margin: '3rem 0'})}
+    a {
+        color: #0051ff;
+        text-decoration: underline;
+    }
 `
 
 const NameContainer = styled.div`
@@ -40,7 +44,7 @@ const Name = styled.h1`
     font-family: ${nameFont} ;
     line-height: 0.9;
     text-align: center;
-    ${mobile({})}
+    
 `;
 
 const Intro = () => {
@@ -57,7 +61,7 @@ const Intro = () => {
                         <Name>Lab</Name>
                         <Name>Partner</Name>
                     <IntroPara>
-                        We'll help you to complete your labs
+                        We'll help you to complete your labs<br />Use Lab Partner <a href="#typewriter">auto typewriter</a> for better indentation.
                     </IntroPara>
                 </NameContainer>
 
