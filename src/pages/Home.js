@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
       <Intro />
-      <Labs />
       <Slider />
+      <Labs />
       <Contact />
     </>
   )
