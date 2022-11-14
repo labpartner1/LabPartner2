@@ -61,7 +61,8 @@ const Intro = () => {
                         <Name>Lab</Name>
                         <Name>Partner</Name>
                     <IntroPara>
-                        We'll help you to complete your labs<br />Use Lab Partner <a href="#typewriter">auto typewriter</a> for better indentation.
+                        We'll help you to complete your labs<br />Use Lab Partner <a href="#typewriter">auto typewriter</a> for better indentation. <br />
+                        Special thanks for <a rel="noreferrer" href="https://www.instagram.com/sunny.sharma.02/" target={"_blank"}>Sunny Sharma</a> for creating Auto typewriter for Mac OS.
                     </IntroPara>
                 </NameContainer>
 

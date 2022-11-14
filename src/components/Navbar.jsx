@@ -25,9 +25,9 @@ const Navbar = () => {
 
                     <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
 
-                    <li className="nav-item"><a href={`${path === '/' ? '#labs' : '/'}`} className="nav-link">Labs</a></li>
-
                     <li className="nav-item"><a href={`${path === '/' ? '#typewriter' : '/'}`} className="nav-link">Auto Typewriter</a></li>
+
+                    <li className="nav-item"><a href={`${path === '/' ? '#labs' : '/'}`} className="nav-link">Labs</a></li>
 
                     <li className="nav-item"><a href={`${path === '/' ? '#contact' : '/'}`} className="nav-link">Feedback</a></li>
                     

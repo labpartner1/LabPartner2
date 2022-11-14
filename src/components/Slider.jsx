@@ -8,30 +8,38 @@ import { Pagination, Navigation } from "swiper";
 import { Heading2, Container, Button, Heading4, Para, darkgreen, white } from './CommonComp'
 import styled from "styled-components";
 import { mobile } from "./Responsive";
-import labPartnerApp from '../lab partner app/lab partner 2.0.exe';
-import step1 from '../images/step 1.png'
-import step2 from '../images/step 2.png'
-import step3 from '../images/step 3.png'
+import labPartnerWindowsApp from '../lab partner app/lab partner 2.0.exe';
+import labPartnerMacApp from '../lab partner app/lab partner 2.0.dmg';
+import step1 from '../images/step 1.png';
+import step2 from '../images/step 2.png';
+import step3 from '../images/step 3.png';
+import { BsApple } from "react-icons/bs";
+import { BsWindows } from "react-icons/bs";
 
 
 const SliderContainer = styled(Container)`
   flex-direction: column;
   justify-content: space-around;
-  ${mobile({height: '80rem'})}
+  ${mobile({ height: '80rem' })}
 `;
 
 const DownloadButton = styled(Button)`
-    width: 18rem;
+    width: 20rem;
     height: 6rem;
     font-size: 2.2rem;
 
     a {
       color: ${darkgreen};
+      gap: 1rem;
     }
 
     &:hover  a {
       color: ${white};
     }
+`;
+
+const ButtonBox = styled.div`
+  gap: 25rem;
 `;
 
 const SlideContainer = styled.div`
@@ -40,7 +48,7 @@ const SlideContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  ${mobile({flexDirection: 'column', height: '80%'})}
+  ${mobile({ flexDirection: 'column', height: '80%' })}
 `;
 
 const Wrapper = styled.div``;
@@ -89,11 +97,12 @@ export default function App() {
 
             </SwiperSlide>
 
-
           </Swiper>
 
-          <DownloadButton><a href={labPartnerApp}>Download</a></DownloadButton>
-          {/* <DownloadButton>Download</DownloadButton> */}
+          <ButtonBox className="d-flex">
+            <DownloadButton><a href={labPartnerMacApp} className="d-flex" ><span>Download for</span> <BsApple /></a></DownloadButton>
+            <DownloadButton><a href={labPartnerWindowsApp} className="d-flex" ><span>Download for</span> <BsWindows /></a></DownloadButton>
+          </ButtonBox>
         </SliderContainer>
       </Wrapper>
     </>
