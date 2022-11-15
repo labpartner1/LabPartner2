@@ -9,11 +9,11 @@ import { Heading2, Container, Button, Heading4, Para, darkgreen, white } from '.
 import styled from "styled-components";
 import { mobile } from "./Responsive";
 import labPartnerWindowsApp from '../lab partner app/lab partner 2.0.exe';
-import labPartnerMacApp from '../lab partner app/lab partner 2.0.dmg';
+// import labPartnerMacApp from '../lab partner app/lab partner 2.0.dmg';
 import step1 from '../images/step 1.png';
 import step2 from '../images/step 2.png';
 import step3 from '../images/step 3.png';
-import { BsApple } from "react-icons/bs";
+// import { BsApple } from "react-icons/bs";
 import { BsWindows } from "react-icons/bs";
 
 
@@ -100,7 +100,7 @@ export default function App() {
           </Swiper>
 
           <ButtonBox className="d-flex">
-            <DownloadButton><a href={labPartnerMacApp} className="d-flex" ><span>Download for</span> <BsApple /></a></DownloadButton>
+            {/* <DownloadButton><a href={labPartnerMacApp} className="d-flex" ><span>Download for</span> <BsApple /></a></DownloadButton> */}
             <DownloadButton><a href={labPartnerWindowsApp} className="d-flex" ><span>Download for</span> <BsWindows /></a></DownloadButton>
           </ButtonBox>
         </SliderContainer>
